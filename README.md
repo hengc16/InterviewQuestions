@@ -22,7 +22,7 @@
 
 - Dynamic Programming
 
-#OOD & Design Patterns
+##OOD & Design Patterns
 
 - [Seven Principles](https://github.com/hengc16/InterviewQuestions/blob/master/src/com/heng/ood/designpattern/seven%20principles.png)
 - [Singleton Pattern](https://github.com/hengc16/InterviewQuestions/blob/master/src/com/heng/ood/designpattern/Singleton%20Pattern.png)
