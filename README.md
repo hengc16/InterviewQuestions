@@ -2,27 +2,28 @@
 
 ##Coding Questions:
 
-- BinarySearch
+- [BinarySearch](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/binarysearch)
 
-- Stack & Queue
+- [Stack & Queue](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/stackqueue)
 
-- Sorting
+- [Sorting](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/sorting)
 
-- LinkedList
+- [LinkedList](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/linkedList)
 
-- Recursion
+- [Recursion](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/recursion)
 
-- BinaryTree
+- [BinaryTree](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/binarytree)
 
-- BFS
+- [BFS](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/bfs)
 
-- DFS
+- [DFS](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/dfs)
 
-- Bit
+- [Bit](https://github.com/hengc16/InterviewQuestions/tree/master/src/com/heng/code/bit)
 
 - Dynamic Programming
 
 #OOD & Design Patterns
 
-- [Seven Principles]()
+- [Seven Principles](https://github.com/hengc16/InterviewQuestions/blob/master/src/com/heng/ood/designpattern/seven%20principles.png)
+- [Singleton Pattern](https://github.com/hengc16/InterviewQuestions/blob/master/src/com/heng/ood/designpattern/Singleton%20Pattern.png)
 
