@@ -3,13 +3,12 @@ package com.heng.code.binarysearch;
 /**
  * Description
  * Given a target number and an integer array sorted in ascending order. Find the total number of occurrences of target in the array.
- * <p>
- * <p>
  * Example
+ *
  * Given [1, 3, 3, 4, 5] and target = 3, return 2.
- * <p>
+ *
  * Given [2, 2, 3, 4, 6] and target = 4, return 1.
- * <p>
+ *
  * Given [1, 2, 3, 4, 5] and target = 6, return 0.
  */
 public class TotalOccurrence {
