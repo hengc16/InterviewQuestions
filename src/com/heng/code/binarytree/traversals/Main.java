@@ -1,9 +1,9 @@
 package com.heng.code.binarytree.traversals;
 
-import com.sun.source.tree.Tree;
+import com.heng.code.binarytree.TreeGenerator;
+import com.heng.code.binarytree.TreeNode;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -14,12 +14,8 @@ public class Main {
         //         7        11
         //      5    9          18
         PreOrderTraversal preOrder = new PreOrderTraversal();
-        TreeNode root = new TreeNode(10);
-        root.left = new TreeNode(7);
-        root.right = new TreeNode(11);
-        root.left.left = new TreeNode(5);
-        root.left.right = new TreeNode(9);
-        root.right.right = new TreeNode(18);
+        TreeGenerator testTree = new TreeGenerator();
+        TreeNode root = testTree.getTestBinaryTree();
 
         //use preOrder iterative way to solve
         List<Integer> res = new ArrayList<>();
@@ -39,6 +35,17 @@ public class Main {
         //recursive way
         res.clear();
         res = inorder.inOrderRecur(root);
+        System.out.println(res.toString());
+
+        //postOrder - traversal
+        PostOrderTraversal postOrder = new PostOrderTraversal();
+        //iterative
+        res.clear();
+        res = postOrder.postOrderIter(root);
+        System.out.println(res.toString());
+        //recursive
+        res.clear();
+        res = postOrder.postOrderRecur(root);
         System.out.println(res.toString());
 
     }

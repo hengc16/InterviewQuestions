@@ -1,7 +1,6 @@
 package com.heng.code.binarytree.traversals;
 
-import com.heng.code.binarytree.traversals.TreeNode;
-import com.sun.source.tree.Tree;
+import com.heng.code.binarytree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
