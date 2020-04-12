@@ -44,3 +44,19 @@ public class AllPermutation {
         array[j] = temp;
     }
 }
+/**
+ *                           abc
+ *                       /    |     \
+ *                    a       b       c                  swap(0,0)   swap(0,1)    swap(0,2)
+ *                  / \      / \      / \
+ *                ab   ac   ba bc    ca  cb           swap(1,1)(1,2)  swap(1,1)(1,2)  swap(1,1)(1,2)
+ *                |    |    |   |    |   |
+ *               abc  acb  bac bca   cab cba         swap(2,2)(2,2)   swap(2,2)(2,)   swap(2,2)(2,2)
+ *
+ *
+ *               T: O(n!)
+ *               S: O(n)
+ *
+ *
+ *
+ */
