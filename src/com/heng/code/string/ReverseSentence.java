@@ -24,11 +24,11 @@ public class ReverseSentence {
         reverse( array, 0, array.length - 1);
         int beginIndex = 0;
         for(int i = 0; i < array.length; i++){
-            //找begin index
-            if(array[i] != ' '&& (i == 0 || array[i - 1] == ' ')){
+            //找beginindex
+            if(array[i] != ' '&& (i == 0 || array[i - 1] == ' ')){  //句首 和每个单词的首字母位置
                 beginIndex = i;
             }
-            if(array[i] != ' ' && ( i == array.length - 1 || array[i + 1] == ' ')){
+            if(array[i] != ' ' && ( i == array.length - 1 || array[i + 1] == ' ')){  //句尾 和每个单词的最后一个字母的位置
                 reverse(array, beginIndex, i);
             }
         }
