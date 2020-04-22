@@ -37,7 +37,7 @@ import java.util.List;
 public class ReverseBinaryTree {
     public TreeNode reverse(TreeNode root) {
         // Write your solution here
-        if(root == null || root.left == null) {
+        if (root == null || root.left == null) {
             return root;
         }
         TreeNode newRoot = reverse(root.left);
@@ -47,6 +47,7 @@ public class ReverseBinaryTree {
         root.right = null;
         return newRoot;
     }
+
     /*
      *             10
      *            /  \
