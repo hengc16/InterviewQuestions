@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-class PreOrderTraversal {
+public class PreOrderTraversal {
     // iterative way to do preOrder
-    List<Integer> preOrderIter(TreeNode root) {
+    public List<Integer> preOrderIter(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {
             return res;
@@ -28,7 +28,7 @@ class PreOrderTraversal {
         return res;
     }
     // pre order recursively
-    List<Integer> preOrderRecur(TreeNode root) {
+    public List<Integer> preOrderRecur(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {
             return res;

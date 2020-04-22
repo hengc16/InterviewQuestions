@@ -12,15 +12,15 @@ public class TreeGenerator {
          *             10
          *            /  \
          *           7    11
-         *          / \     \
-         *         5   9     18
+         *          / \
+         *         5   9
          */
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(7);
         root.right = new TreeNode(11);
         root.left.left = new TreeNode(5);
         root.left.right = new TreeNode(9);
-        root.right.right = new TreeNode(18);
+//        root.right.right = new TreeNode(18);
         return root;
     }
     public TreeNode getTestBalancedTree(){
