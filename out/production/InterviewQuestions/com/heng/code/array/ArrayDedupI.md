@@ -70,4 +70,4 @@ public int[] dedupI(int[] input) {
 }
 ```
 根据物理意义， s为返回值得最后一个元素， 和f做对比，如果相同则继续搜索，如果不同，要先挪动s，再将f的值放入s这里。
-最后返回的时候要注意s是inclusive的， 所以要返回s + 1
+最后返回的时候要注意s是inclusive的， 所以要返回s + 1. 因为Arrays.copy(int[], index), 这里的index是exclusive的。
