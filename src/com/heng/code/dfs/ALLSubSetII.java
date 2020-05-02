@@ -14,7 +14,7 @@ import java.util.List;
  *
  * Set = "", all permutations are [""]
  */
-public class AllPermutation2 {
+public class ALLSubSetII {
     public List<String> permutations(String input) {
         // Write your solution here
         List<String> res = new ArrayList<>();
@@ -46,7 +46,7 @@ public class AllPermutation2 {
     }
 
     public static void main(String[] args) {
-        AllPermutation2 test1 = new AllPermutation2();
+        ALLSubSetII test1 = new ALLSubSetII();
         List<String> res = test1.permutations("abc");
         System.out.println(res.toString());
     }
