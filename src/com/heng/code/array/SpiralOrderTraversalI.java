@@ -72,10 +72,10 @@ public class SpiralOrderTraversalI {
         if (m <= 0 || n <= 0) {
             return;
         }
-//        if (m == 1 && n == 1) {
-//            res.add(matrix[start][start]);
-//            return;
-//        }
+        if (m == 1 && n == 1) {
+            res.add(matrix[start][start]);
+            return;
+        }
         //horizontal top  [start to size - 1)
         for (int i = 0; i < n - 1; i++) {
             res.add(matrix[start][start + i]);
