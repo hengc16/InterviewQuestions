@@ -12,7 +12,7 @@ public class Main {
         //create a binary tree
         //             10
         //         7        11
-        //      5    9          18
+        //      5    9
         PreOrderTraversal preOrder = new PreOrderTraversal();
         TreeGenerator testTree = new TreeGenerator();
         TreeNode root = testTree.getTestBinaryTree();
@@ -20,11 +20,11 @@ public class Main {
         //use preOrder iterative way to solve
         List<Integer> res = new ArrayList<>();
         res = preOrder.preOrderIter(root);
-        System.out.println(res.toString());            // 10 7 5 9 11 18
+        System.out.println(res.toString());            // 10 7 5 9 11
         //use preOrder recursive way to solve;
         res.clear();
         res = preOrder.preOrderRecur(root);
-        System.out.println(res.toString());           // 10 7 5 9 11 18
+        System.out.println(res.toString());           // 10 7 5 9 11
 
         //inOder -traversal
         InOrderTraversal inorder = new InOrderTraversal();
