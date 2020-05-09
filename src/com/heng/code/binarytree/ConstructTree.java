@@ -5,7 +5,7 @@ package com.heng.code.binarytree;
 import java.util.List;
 
 /**
- * implement a solution to parse a ternay expression into a tree. return the root of the constructed tree;
+ * implement a solution to parse a ternary expression into a tree. return the root of the constructed tree;
  * example    a?b:c   ->     a
  *                          / \
  *                         b   c
