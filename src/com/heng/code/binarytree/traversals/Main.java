@@ -48,5 +48,10 @@ public class Main {
         res = postOrder.postOrderRecur(root);
         System.out.println(res.toString());
 
+        //level order -traversal
+        LevelOrderTraverse levelOrderTraverse = new LevelOrderTraverse();
+        res.clear();
+        res = levelOrderTraverse.levelOrder(root);
+        System.out.println(res.toString());
     }
 }
