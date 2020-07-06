@@ -45,4 +45,28 @@ public class InOrderTraversal {
         helper(root.right, res);
     }
 
+    public static void main(String[] args) {
+        /*              10
+                    /           \
+        *         5                15
+              /      \           /    \
+           2          7          12       20
+             \
+               4
+              /
+        *    3
+        *
+        * */
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.left.left = new TreeNode(2);
+        root.left.left.right = new TreeNode(4);
+        root.left.left.right.left = new TreeNode(3);
+        root.right = new TreeNode(15);
+        root.right.left = new TreeNode(12);
+        root.right.right = new TreeNode(20);
+        InOrderTraversal inOrderTraversal = new InOrderTraversal();
+        List<Integer> res = inOrderTraversal.inOrderRecur(root);
+        System.out.println(res.toString());
+    }
 }

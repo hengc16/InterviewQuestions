@@ -53,5 +53,11 @@ public class Main {
         res.clear();
         res = levelOrderTraverse.levelOrder(root);
         System.out.println(res.toString());
+
+        //vertical order traversal
+        VerticalTraverse verticalTraverse = new VerticalTraverse();
+        res.clear();
+        res = verticalTraverse.verticalOrder(root);
+        System.out.println(res.toString());
     }
 }
