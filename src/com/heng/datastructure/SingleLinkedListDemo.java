@@ -10,6 +10,7 @@ public class SingleLinkedListDemo {
         HeroNode hero4 = new HeroNode(8, "魅惑魔", "小鹿");
         HeroNode hero5 = new HeroNode(4, "魅惑", "小鹿");
         HeroNode hero6 = new HeroNode(9, "魅", "小鹿");
+        HeroNode hero7 = new HeroNode(9, "魅魔", "小鹿");
         SingleLinkedList list = new SingleLinkedList();
         list.add(hero1);
         list.add(hero2);
@@ -17,6 +18,10 @@ public class SingleLinkedListDemo {
         list.insert(hero4);
         list.insert(hero5);
         list.insert(hero6);
+        list.update(hero7);
+        list.delete(hero4);
+        list.delete(hero1);
+        list.delete(hero7);
         list.show();
     }
 }
@@ -47,6 +52,9 @@ class SingleLinkedList{
             System.out.println(temp.toString());
             temp = temp.next;
         }
+    }
+    public boolean isEmpty(){
+        return size==0;
     }
     public void insert(HeroNode newNode){
         //corner case
@@ -80,6 +88,56 @@ class SingleLinkedList{
             cur = cur.next;
         }
     }
+    public void update(HeroNode newNode){
+        if(isEmpty()){
+            System.out.println("empty List");
+        }
+        HeroNode cur = head;
+        while(cur != null){
+            if(cur.no == newNode.no){
+                cur.name = newNode.name;
+                cur.nickName = newNode.nickName;
+                return;
+            }
+            cur = cur.next;
+        }
+        System.out.println("no such node exist");
+    }
+    public void delete(HeroNode node){
+        if(isEmpty()){
+            throw new RuntimeException("empty list");
+        }
+        if(size == 1 && head.no == node.no){
+            head = null;
+            tail = null;
+            size = 0;
+            return;
+        }
+        if(head.no == node.no){
+            head = head.next;
+            size--;
+        }
+
+        HeroNode cur = head.next;
+        HeroNode pre = head;
+        while(cur != null){
+            HeroNode next = cur.next;
+            if(cur.no == node.no && cur.next == null){
+                pre.next = null;
+                tail = pre;
+                size--;
+                return;
+            }
+            if(cur.no == node.no){
+                pre.next = next;
+                size--;
+            }
+            pre = cur;
+            cur = cur.next;
+
+        }
+    }
+
 }
 
 class HeroNode {
